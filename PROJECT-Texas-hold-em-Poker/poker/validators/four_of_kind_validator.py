@@ -9,5 +9,5 @@ class FourOfKind(RankValidator):
         card_of_four_kind=self._rank_with_count(4)
         return len(card_of_four_kind)==1
 
-    def valid_cards(self):
+    def valid_card(self):
         return [card for card in self.cards if card.rank in self._rank_with_count(4)]
